@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Teacher = () => {
@@ -11,10 +12,10 @@ const Teacher = () => {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-16 py-10 lg:py-20">
         <div className="flex flex-col gap-5 ">
-          <img src="/assets/t1.svg" alt="v1" />
+          <Image src="/meritlogo.svg" alt="t1" width={250} height={250} />
           <p className="text-2xl font-semibold">Christian Howard</p>
           <div className="flex items-center gap-2">
-            <img src="/assets/italy.svg" alt="itersfgjds" />
+          <Image src="/assets/italy.svg" width={45} height={45} alt="itersfgjds" />
             <p className="text-gray-500">
           Italian teacher
           </p>
@@ -22,10 +23,10 @@ const Teacher = () => {
        
         </div>
         <div className="flex flex-col gap-5 ">
-          <img src="/assets/t2.svg" alt="v1" />
+          <Image width={250} height={250} src="/meritlogo.svg" alt="v1" />
           <p className="text-2xl font-semibold">Sandra Wilson</p>
           <div className="flex items-center gap-2">
-            <img src="/assets/spain.svg" alt="itersfgjds" />
+            <Image width={45} height={45} src="/assets/spain.svg" alt="itersfgjds" />
             <p className="text-gray-500">
             Spanish teacher
           </p>
@@ -33,10 +34,10 @@ const Teacher = () => {
        
         </div>
         <div className="flex flex-col gap-5 ">
-          <img src="/assets/t3.svg" alt="v1" />
+          <Image width={250} height={250} src="/meritlogo.svg" alt="v1" />
           <p className="text-2xl font-semibold">Jimmy Cooper</p>
           <div className="flex items-center gap-2">
-            <img src="/assets/uk.svg" alt="itersfgjds" />
+            <Image src="/assets/uk.svg" alt="itersfgjds" width={45} height={45} />
             <p className="text-gray-500">
           English teacher
           </p>
