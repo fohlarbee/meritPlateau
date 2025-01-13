@@ -21,7 +21,7 @@ export const TagData = [
     },
     {
         id: 5,
-        tagName: "Donate",
-        href: "/donate"
+        tagName: "Join Us",
+        href: "/Join-us"
     }
 ]

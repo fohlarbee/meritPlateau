@@ -7,6 +7,7 @@ import MoreInfoModal from "../components/MoreInfoModal";
 import Student from "../components/Student";
 import Teacher from "../components/Teachers";
 import Values from "../components/Values";
+import Mission from "../components/Mission";
 
 export default function Home() {
   return (
@@ -20,12 +21,14 @@ export default function Home() {
       </Head>
       
     <Hero/>
+    <Mission />
     <Values/>
     <Teacher/>
     <Student/>
    <MoreInfoModal/>
    <Cta/>
    <Footer/>
+   
     </div>
   );
 }

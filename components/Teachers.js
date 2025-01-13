@@ -12,34 +12,42 @@ const Teacher = () => {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-16 py-10 lg:py-20">
         <div className="flex flex-col gap-5 ">
-          <Image src="/meritlogo.svg" alt="t1" width={250} height={250} />
-          <p className="text-2xl font-semibold">Christian Howard</p>
+          <Image src="/assets/jub.webp" alt="t1" width={250} height={250} />
+          <p className="text-2xl font-semibold">Jubilant Agida</p>
           <div className="flex items-center gap-2">
-          <Image src="/assets/italy.svg" width={45} height={45} alt="itersfgjds" />
             <p className="text-gray-500">
-          Italian teacher
+          Founder/President
           </p>
           </div>
        
         </div>
         <div className="flex flex-col gap-5 ">
-          <Image width={250} height={250} src="/meritlogo.svg" alt="v1" />
-          <p className="text-2xl font-semibold">Sandra Wilson</p>
+          <Image width={250} height={250} src="/assets/Mak.webp" alt="v1" />
+          <p className="text-2xl font-semibold">Mary Madaki</p>
           <div className="flex items-center gap-2">
-            <Image width={45} height={45} src="/assets/spain.svg" alt="itersfgjds" />
             <p className="text-gray-500">
-            Spanish teacher
+            Vice President - Operations
           </p>
           </div>
        
         </div>
         <div className="flex flex-col gap-5 ">
-          <Image width={250} height={250} src="/meritlogo.svg" alt="v1" />
-          <p className="text-2xl font-semibold">Jimmy Cooper</p>
+          <Image width={250} height={250} src="/assets/Sam.webp" alt="v1" />
+          <p className="text-2xl font-semibold">Samuel Olaranrewaju</p>
           <div className="flex items-center gap-2">
-            <Image src="/assets/uk.svg" alt="itersfgjds" width={45} height={45} />
             <p className="text-gray-500">
-          English teacher
+          Vice President - Partnership and Sponsorship
+          </p>
+          </div>
+       
+        </div>
+
+        <div className="flex flex-col gap-5 ">
+          <Image width={250} height={250} src="/assets/Azo.webp" alt="v1" />
+          <p className="text-2xl font-semibold">Azonchi Sambo</p>
+          <div className="flex items-center gap-2">
+            <p className="text-gray-500">
+          Vice President - Membership Engagement
           </p>
           </div>
        

@@ -8,8 +8,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   return (
   <nav className='flex flex-row justify-between w-full items-center '>
-        <div className="flex-row justify-center items-center gap-5 shadow-lg border border-opacity-5 rounded-xl bg-[#fff5f1]">
-            <Image src="/meritlogo.svg" alt="logo"  width={50} height={50} className='rounded-full p-1'/>
+        <div className="flex-row justify-center items-center gap-5 shadow-lg border border-opacity-5 rounded-xl">
+            <Image src="/Merit-Plateau-Color.png" alt="logo"  width={70} height={70} className='rounded-full p-1'/>
         </div>
         <div className="flex-row justify-center  lg:justify-between items-center gap-5 hidden md:flex ">
                {TagData.map((t, i) => (
