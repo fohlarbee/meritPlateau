@@ -7,23 +7,26 @@ import { TagData } from '../Data/TagData'
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   return (
-  <nav className='flex flex-row justify-between w-full items-center '>
-        <div className="flex-row justify-center items-center gap-5 shadow-lg border border-opacity-5 rounded-xl">
-            <Image src="/Merit-Plateau-Color.png" alt="logo"  width={70} height={70} className='rounded-full p-1'/>
+  <nav className='flex flex-row justify-around w-full items-center py-2'>
+    
+        <div className="flex-row justify-center items-center gap-5 rounded-xl">
+            <Image src="/logo-b.svg" alt="logo"  width={70} height={70} className=' p-1 w-full'/>
         </div>
+
+        <button className='btn hidden md:flex bg-purp-dark text-[#fff] border-none hover:bg-purp-light hover:text-white capitalize rounded px-8'>
+                    donate
+            </button>
         <div className="flex-row justify-center  lg:justify-between items-center gap-5 hidden md:flex ">
                {TagData.map((t, i) => (
                 <NavTag href={t.href} tagName={t.tagName} key={i}/>
                ))}
         </div>
         <div className="">
-            <button className='btn hidden md:flex bg-[#441752] text-[#fff] border-none hover:bg-[#6a3a7a] hover:text-white capitalize rounded-full'>
-                    Get Started
-            </button>
+          
             <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className='btn flex md:hidden bg-[#eee] text-[#fff] border-none hover:bg-[#6a3a7a] hover:text-white capitalize rounded-full'>
-                    <Image src="/assets/menu.svg" alt="menu" className='text-[#441752]' width={20} height={20}/>
+            className='btn flex md:hidden bg-[#eee] text-[#fff] border-none hover:bg-purp-light hover:text-white capitalize rounded-full'>
+                    <Image src="/assets/menu.svg" alt="menu" className='text-col-blk' width={20} height={20}/>
             </button>
         </div>
         {isMenuOpen && (
@@ -35,7 +38,7 @@ const Navbar = () => {
                 width={20} 
                 height={20} 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className='text-[#441752]'
+                className='text-text-col-blk'
                 />
               </button>
               {TagData.map((t, i) => (

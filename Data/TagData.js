@@ -1,18 +1,18 @@
 export const TagData = [
     {
         id: 1,
-        tagName: "About Us",
+        tagName: "Home",
         href: "/"
     },
     {
         id: 2,
-        tagName: "Program",
-        href: "/program"
+        tagName: "About Us",
+        href: "/About Us"
     },
     {
         id: 3,
-        tagName: "Get Involved",
-        href: "/get-involved"
+        tagName: "Media",
+        href: "/Media"
     },
     {
         id: 4,

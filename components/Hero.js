@@ -5,22 +5,20 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="mx-auto">
-       <div className="bg-[url('/assets/bg1.webp')] bg-cover bg-no-repeat bg-center bg-blend-lighten px-6 lg:px-16 py-10"> {/* #ECD0FF */}
-        <Navbar />
-        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 mt-20 lg:mt-8">
-          <div className="flex flex-col gap-2 lg:gap-8">
-            <h1 className=" text-2xl text-white sm:text-4xl md:text-5xl lg:text-6xl font-medium">
-             Merit Plateau
+      <Navbar />
+       <div className="bg-[url('/bgimg.webp')] bg-cover bg-no-repeat bg-center bg-blend-lighten px-6 lg:px-16 py-5"> {/* #ECD0FF */}
+        
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 lg:mt-8 w-1/2">
+          <div className="flex flex-col gap-4 lg:gap-8 mt-14">
+            <h1 className=" text-xl text-white sm:text-2xl md:text-4xl lg:text-4xl pb-40">
+            Building up dreams in the midst of adversity
             </h1>
+            <div className="flex ml-[120%] " >
 
-            <p className="w-20 h-4 bg-[#FFD700] rounded-l" ></p>
-
-            <p className="text-sm sm:text-base lg:text-lg text-white">
-              Building up dreams in the midst of adversity.
-            </p>
-            <button className="btn btn-sm lg:btn-lg bg-[#441752] hover:bg-[#6a3a7a] text-white rounded-full border-none w-36 lg:w-44 capitalize">Join Us Today</button>
+            <button className="btn lg:btn-sm bg-[#441752] hover:bg-[#6a3a7a] text-white rounded-lg mr-1 border-none w-30 lg:w-24 capitalize">sign up</button>
+            <button className="btn lg:btn-sm bg-col-grey hover:bg-[#6a3a7a] text-purp-dark rounded-lg border-none w-30 lg:w-24 capitalize">sign in</button>
+            </div>
           </div>
-          {/* <Image src="/assets/hero.png" alt="" width={470} height={470} /> */}
         </div>
       </div>
     </div>

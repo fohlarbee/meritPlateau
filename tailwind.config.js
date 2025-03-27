@@ -52,6 +52,20 @@ module.exports = {
           800: "#530B0B",
           900: "#210404",
         },
+
+        purp: {
+          DEFAULT: "#1B1C1E",
+          dark: "#3A0D61",
+          light: "#5E2CA5",
+          lighter: "#A38AF6",
+        },
+
+        col: {
+          DEFAULT: "#1B1C1E",
+          blk: "#1B1C1E",
+          grey: "#D3D3D3",
+          gold: "#D4AF37"
+        },
       },
     },
   },
