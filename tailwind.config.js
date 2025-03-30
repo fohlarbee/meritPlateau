@@ -16,11 +16,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      monoton:["Monoton", "cursive"],
-      satoshi:['Satoshi', 'sans-serif'],
-      clash:['Clash Display', 'sans-serif'],
-      infinite: ["Outfit", "sans-serif"],
-      bebasneo: ['Bebas Neue', 'cursive'],
+      headerFont:['headerFont', 'sans-serif'],
+      bodyFont:['bodyFont', 'sans-serif'],
     },
     extend: {
       boxShadow: {

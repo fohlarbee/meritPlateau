@@ -10,13 +10,13 @@ const Navbar = () => {
   <nav className='flex flex-row justify-around w-full items-center py-2'>
     
         <div className="flex-row justify-center items-center gap-5 rounded-xl">
-            <Image src="/logo-b.svg" alt="logo"  width={70} height={70} className=' p-1 w-full'/>
+            <Image src="/logo-b.svg" alt="logo"  width={70} height={70} className=' p-1 w-2/4'/>
         </div>
 
-        <button className='btn hidden md:flex bg-purp-dark text-[#fff] border-none hover:bg-purp-light hover:text-white capitalize rounded px-8'>
+        <button className='btn hidden md:flex bg-purp-dark text-[#fff] border-none font-bodyFont hover:bg-purp-light hover:text-white capitalize rounded px-8'>
                     donate
             </button>
-        <div className="flex-row justify-center  lg:justify-between items-center gap-5 hidden md:flex ">
+        <div className="flex-row justify-center font-bodyFont lg:justify-between items-center gap-5 hidden md:flex ">
                {TagData.map((t, i) => (
                 <NavTag href={t.href} tagName={t.tagName} key={i}/>
                ))}

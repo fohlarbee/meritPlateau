@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
-    font-family: 'Clash Display', sans-serif;
+
+@font-face {
+    font-family: bodyFont;
+    src: url(/assets/fonts/calibri-regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: headerFont;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+    font-weight: 700;  
+}
+
+span {
+    background-color: #fFD700;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
 }
