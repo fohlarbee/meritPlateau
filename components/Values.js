@@ -4,31 +4,32 @@ import React from "react";
 const Values = () => {
   return (
     <div className="container mx-auto py-20">
-      <h3 className=" text-3xl lg:text-5xl text-center mt-3 uppercase font-headerFont">
-        Our Values
+      <h3 className="font-semibold text-col-blk mt-3 uppercase text-center"> <span className='rounded-full mr-4 text-col-gold bg-col-gold'>he</span>
+        our values
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-16 py-20">
-        <div className="flex flex-col gap-5 items-center">
-          <Image src="/assets/v1.svg" alt="v1" width={100} height={100} />
-          <p className="text-2xl font-semibold">Speaking clubs</p>
-          <p className="text-gray-500 text-center">
-            In our school you will practice <br /> your speaking skills and just get <br /> a
-            lot of positive emotions!
+
+      <p className=' font-bodyFont text-col-blk text-xl py-4 my-16 mx-auto text-center w-2/3'>
+          At Merit Plateau, our values guide everything we do. We are commited integrity, compassion, inclusivity, and sustainability ensuring every action we take uplifts and empowers the communities we serve.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-20">
+        <div className="flex flex-col gap-5 bg-col-grey rounded-lg ">
+          
+          <h4 className="text-xl font-bold text-white bg-purp-dark mt-8 p-2 w-3/4   font-headerFont uppercase">  <span className="bg-col-gold w-4 h-4 inline-block rounded-full"></span> no discrimination</h4>
+          <p className="text-col-blk font-bodyFont text-lg py-8 px-4 ">
+            No discrimination whatsoever is tolerated agianst anyone of a particular race, tribe, religion, or gender
           </p>
         </div>
-        <div className="flex flex-col gap-5 items-center">
-          <Image src="/assets/v2.svg" alt="v1"  width={100} height={100} />
-          <p className="text-2xl font-semibold">Quality control</p>
-          <p className="text-gray-500 text-center">
-            In our school you will practice <br /> your speaking skills and just get <br /> a
-            lot of positive emotions!
+        <div className="flex flex-col gap-5 bg-col-grey rounded-lg ">
+     
+          <h4 className="text-xl font-bold text-white bg-purp-dark mt-8 p-2 w-3/4 font-headerFont uppercase"><span className="bg-col-gold w-4 h-4 inline-block rounded-full"></span>transparency</h4>
+          <p className="text-col-blk font-bodyFont text-lg py-8 px-4 ">
+            All dealings with the council are done with no shroud of secrecy or shadiness. This is to ensure the sustainance of trust of council members and partners.
           </p>
-        </div> <div className="flex flex-col gap-5 items-center">
-          <Image src="/assets/v3.svg" alt="v1"  width={100} height={100} />
-          <p className="text-2xl font-semibold">Progress analysis</p>
-          <p className="text-gray-500 text-center">
-            In our school you will practice <br /> your speaking skills and just get <br /> a
-            lot of positive emotions!
+        </div> <div className="flex flex-col gap-5 bg-col-grey rounded-lg ">
+
+          <h4 className="text-xl font-bold text-white bg-purp-dark mt-8 p-2 w-3/4    font-headerFont uppercase"><span className="bg-col-gold w-4 h-4 inline-block rounded-full"></span> community</h4>
+          <p className="text-col-blk font-bodyFont text-lg py-8 px-4 ">
+            We stand united through challenges and triumphs, inspiring each other to excel while fostering a culture of accountability.
           </p>
         </div>
       </div>

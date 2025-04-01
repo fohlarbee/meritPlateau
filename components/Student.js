@@ -22,6 +22,8 @@ const Student = () => {
             without using Lingua. <br /> The best part is now learning Spanish has <br />
             become one of my biggest hobbies.
           </p>
+
+          <h1 className="circle"></h1>
         </div>
       </div>
     </div>
