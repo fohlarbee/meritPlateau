@@ -8,6 +8,7 @@ import Student from "../components/Student";
 import Team from "../components/Team";
 import Values from "../components/Values";
 import Mission from "../components/Mission";
+import JoinUs from "../components/JoinUs";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
     <Mission />
     <Values/>
     <Team/>
+    <JoinUs/>
     <Student/>
    <MoreInfoModal/>
    <Cta/>

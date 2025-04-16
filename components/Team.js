@@ -8,9 +8,17 @@ const Team = () => {
       <h2 className="text-lg lg:text-xl  text-col-blk text-center font-headerFont font-bold mt-3 uppercase">
       Meet our team
       </h2>
-      <p className="text-col-grey text-center font-bodyFont py-4 w-3/4 my-0 mx-auto">
+      <p className="text-col-blk text-center font-bodyFont py-4 w-3/4 my-0 mx-auto">
         Our team is a passionate group of indiviuals dedicated to driving positive change in underpriviledged communities. Each member brings unique skills, experience, and commitment to advancing our mission. Together, we work tirelessly to create impactful programs that empower lives and foster sustainabile development. Collaboration and innovation are at the heart of everything we do. Get to know the people behind Merit Plateau and the work that makes a difference.
       </p>
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-16 py-10 lg:py-20">
+
+      </div>
+
+
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-16 py-10 lg:py-20">
         <div className="flex flex-col gap-5 ">
           <Image src="/assets/jub.webp" alt="t1" width={250} height={250} />
