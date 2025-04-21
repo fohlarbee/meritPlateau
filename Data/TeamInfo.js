@@ -1,32 +1,34 @@
-export const TagData = [
+
+
+export const TeamData = [
         {
             id: 1,
             name: "Jubilant Agida",
             position: "Founder/President",
-            href: "/"
+            image: "/assets/Jub.webp"
         },
         {
             id: 2,
             name: "Mary Madaki",
             position: "Vice President, Operations",
-            href: "/About Us"
+            image: "/assets/Mak.webp"
         },
         {
             id: 3,
             name: "Samuel Olanrewaju",
             position: "Vice President, Partnership/Fundraising",
-            href: "/Media"
+            image: "/assets/Sam.webp"
         },
         {
             id: 4,
             name: "Azonchi Sambo",
             position: "Vice President, Membership/Engagement",
-            href: "/contact"
+            image: "/assets/Azo.webp"
         },
         {
             id: 5,
             name: "Nankling Sati",
             position: "Vice President, Media/Communication",
-            href: "/Join-us"
+            image: "/assets/Nankling.png"
         }
     ]

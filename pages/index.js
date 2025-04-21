@@ -1,12 +1,8 @@
 import Head from "next/head";
+import Home from "./Home";
 import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Team from "../components/Team";
-import Values from "../components/Values";
-import Mission from "../components/Mission";
-import JoinUs from "../components/JoinUs";
 
-export default function Home() {
+export default function App() {
   return (
     <div>
       <Head>
@@ -14,14 +10,10 @@ export default function Home() {
         <meta name="description" content="a non-proft organization" />
         <link
         ></link>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       
-    <Hero/>
-    <Mission />
-    <Values/>
-    <Team/>
-    <JoinUs/>
+   <Home/>
    <Footer/>
    
     </div>

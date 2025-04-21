@@ -2,10 +2,10 @@
 export default function JoinUs() {
   return (
     <section className=" mx-auto">
-        <div className="bg-[url('/assets/support.webp')] bg-no-repeat bg-center py-8 text-center">         
-        <h3 className="text-white font-headerFont font-extrabold text-2xl py-4">Join Us, Be a part of the Change</h3>
+        <div className="bg-[url('/assets/support.webp')] bg-no-repeat bg-center py-8 px-16 text-center">         
+        <h3 className="text-white font-headerFont font-extrabold text-4xl py-4">Join Us, Be a part of the Change</h3>
 
-        <p className=" text-white text-lg py-8 font-bodyFont ">
+        <p className=" text-white text-2xl py-8 px-32 font-bodyFont ">
                 Become a part of Merit Plateau's mission to uplift underpriviledged communities. Whether as a volunteer, donor, or partner. Your support can help create lasting impact and positive change.
         </p>
 
