@@ -6,7 +6,7 @@ import JoinUs from "../components/JoinUs";
 
 export default function Home() {
   return (
-    <section>
+    <main>
       
     <Hero/>
     <Mission />
@@ -14,6 +14,6 @@ export default function Home() {
     <Team/>
     <JoinUs/>
    
-    </section>
+    </main>
   );
 }

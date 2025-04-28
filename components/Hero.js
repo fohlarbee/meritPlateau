@@ -1,6 +1,6 @@
-import React from "react";
+import Link from "next/link";
 import Navbar from "./Navbar";
-import Image from "next/image";
+
 
 const Hero = () => {
   return (
@@ -20,8 +20,8 @@ const Hero = () => {
               proving that perseverance can turn even the toughest circumstances into a foundation for greatness”.</p>
             <div className="flex ml-[60%] mb-10" >
 
-            <button className="btn lg:btn-sm bg-[#441752] hover:bg-[#6a3a7a] text-white rounded-lg mr-1 border-none w-30 lg:w-24 capitalize">sign up</button>
-            <button className="btn lg:btn-sm bg-col-grey hover:bg-[#6a3a7a] hover:text-col-grey text-purp-dark rounded-lg border-none w-30 lg:w-24 capitalize">sign in</button>
+            <Link href="/Signup"><button className="btn lg:btn-sm bg-[#441752] hover:bg-[#6a3a7a] text-white rounded-lg mr-1 border-none w-30 lg:w-24 capitalize">sign up</button></Link>
+            <Link href="/SignIn"><button className="btn lg:btn-sm bg-col-grey hover:bg-[#6a3a7a] hover:text-col-grey text-purp-dark rounded-lg border-none w-30 lg:w-24 capitalize">sign in</button></Link>
             </div>
           </div>
         </div>
