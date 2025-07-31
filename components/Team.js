@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { TeamData } from "../Data/TeamInfo";
 
 const Team = () => {
@@ -21,7 +22,7 @@ const Team = () => {
           src={data.image}
           alt={data.position}
           className="w-40 h-40 mx-auto rounded-full object-cover"
-          ></img>
+        />
 
           <h3 className=" font-headerFont">{data.name}</h3>
           <h3 className="text-white bg-col-blk mx-5 rounded-md py-2 ">{data.position}</h3>

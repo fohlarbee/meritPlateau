@@ -1,20 +1,17 @@
 import Link from "next/link";
-import { FaGoogle } from "react-icons/fa6";
-
 
 export default function SignIn() {
   return (
-    <section className=' grid lg:grid-cols-2 items-center align-middle justify-center gap-20 p-12'>
-      <div className="h-full">
-  
-
-        <img src="/assets/formBg1.webp"></img>
+    <section className=" grid grid-cols-1 md:grid-cols-2 items-center align-middle justify-center gap-20  bg-[url('/assets/formBg1.webp')] bg-cover bg-no-repeat bg-center relative md:bg-none">     
+      
+      <div className="p-8">
+        <img className="h-full hidden md:block" src="/assets/formBg1.webp"></img>
         {/* <img src="/assets/logo1.png"></img> */}
       </div>
 
-
-      <form className="lg:w-3/4">
-        <h2 className="text-xl lg:text-3xl font-headerFont py-2">Welcome back!</h2>
+      <div className="  bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">
+      <form className="lg:w-3/4 ">
+        <h2 className="text-2xl lg:text-3xl font-headerFont py-2">Welcome back!</h2>
         <p className="text-sm lg:text-lg pb-12">Enter your credentials to access your account</p>
 
                     {/* Form elements */}
@@ -39,19 +36,22 @@ export default function SignIn() {
 
                 {/* Google Alternative */}
           <p className="flex items-center mb-6">
-          <span className=""></span>
+          <span className="w-1/2 px-1"> <hr /> </span>
           <span>or</span>
-          <span className=""></span>
+          <span className="w-1/2 px-1"><hr /></span>
       </p>
 
       <div className="flex items-center  gap-20 border px-2 py-1 rounded-3xl mb-6">
-        <FaGoogle></FaGoogle> <p className="font-medium font-bodyFont"> Sign in with Google </p>
+        <img src=" /assets/google_icon.png "/> <p className="font-medium font-bodyFont"> Sign in with Google </p>
       </div>
 
 
       <p className="text-center">Dont have an account? <Link href="/Signup" className="text-col-gold">Sign up</Link> </p>
       </form>
+
+      </div>
+      </section>
       
-    </section>
+ 
   )
 }

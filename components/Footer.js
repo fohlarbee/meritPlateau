@@ -1,12 +1,11 @@
-import React from "react";
-import { FaXTwitter, FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa6";
+import SocialLinks from "./socialLinks";
 
 const Footer = () => {
   return (
     <div className="container bg-col-blk mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10 px-10 py-10 rounded-3xl items-center justify-center text-white">
         <div className="flex flex-col items-center lg:items-start gap-5">
-          <img src="/assets/logo-b.svg" alt="footer lgo" />
+          <img src="/assets/logo-b.svg" alt="footer logo" />
           <p className="text-center lg:text-start">87 JD Gomwalk way, Jos, Plateau state.</p>
         </div>
         <div className="flex flex-col items-center lg:items-start gap-5 py-4">
@@ -29,11 +28,9 @@ const Footer = () => {
           <p className="text-base">Terms & Conditions</p>
           <p className="text-base">Privacy policy</p>
         </div>
-        <div className="flex items-center justify-center gap-5 py-4">
-                <FaFacebookF className="text-2xl text-white"/>
-                <FaXTwitter className="text-2xl text-white"/>
-                <FaInstagram className="text-2xl text-white"/>
-                <FaLinkedinIn className="text-2xl text-white"/>
+        
+        <div>
+          <SocialLinks />
         </div>
       </div>
     </div>

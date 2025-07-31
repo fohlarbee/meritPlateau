@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import NavTag from './NavTag'
+import Link from 'next/link'
 import { TagData } from '../Data/TagData'
 
 const Navbar = () => {
@@ -13,10 +14,10 @@ const Navbar = () => {
             <Image src="/logo-b.svg" alt="logo"  width={70} height={70} className=' p-1 w-2/4'/>
         </div>
 
-        <button className='btn hidden md:flex bg-purp-dark text-[#fff] border-none font-bodyFont hover:bg-purp-light hover:text-white capitalize rounded px-8'>
+        <Link href="/Donate" className='btn hidden md:flex bg-purp-dark text-[#fff] border-none font-bodyFont hover:bg-purp-light hover:text-white capitalize rounded px-8'>
                     donate
-            </button>
-        <div className="flex-row justify-center font-bodyFont lg:justify-between items-center gap-5 hidden md:flex ">
+        </Link>
+        <div className="flex-row justify-center font-bodyFont lg:justify-between items-center gap-5 text-xl hidden md:flex ">
                {TagData.map((t, i) => (
                 <NavTag href={t.href} tagName={t.tagName} key={i}/>
                ))}
