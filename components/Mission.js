@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Mission() {
   return (
-    <div className="container my-8">
+    <div className=" my-8">
       <div className="">
         
       <div className='grid grid-cols-8 my-20'>
@@ -27,7 +27,7 @@ export default function Mission() {
 
       </div>
 
-      {/* second grid sectiopn */}
+      {/* second grid section */}
 
       <div className='grid grid-cols-8 md:mt-40'>
 

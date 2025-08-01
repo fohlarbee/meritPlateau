@@ -5,7 +5,7 @@ import SocialLinks from '../components/socialLinks'
 
 export default function Contact() {
   return (
-    <section className='container my-4'>
+    <section className='container my-4 mx-auto'>
         <Navbar />
         <article className='grid md:grid-cols-2 grid-cols-1 justify-between gap-12 bg-purp-dark text-white py-12 px-20 mb-20'>
 
@@ -28,8 +28,8 @@ export default function Contact() {
 
           <aside>
             <h3 className="text-lg py-2"> Talk to Us!</h3>
-            <span className="pr-4">+234 7034-6300-34</span>
-            <span className="">contact@meritplateau.org</span>
+            <p className="">+234 7034-6300-34</p>
+            <p className="">contact@meritplateau.org</p>
 
             <hr className="w-3/5" />
 
