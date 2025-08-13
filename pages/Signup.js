@@ -1,11 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SignUp() {
   return (
     <section className=" grid grid-cols-1 md:grid-cols-2 items-center align-middle md:gap-8 justify-center bg-[url('/assets/formBg1.webp')] bg-cover bg-no-repeat bg-center relative md:bg-none">
       
       <div className="h-full p-8">
-        <img className="h-full hidden md:block" src="/assets/formBg1.webp"></img>
+        <Image 
+        height={700}
+        width={700}
+        className="h-full hidden md:block" src="/assets/formBg1.webp"></Image>
         {/* <img src="/assets/logo1.png"></img> */}
       </div>
 
@@ -49,7 +53,7 @@ export default function SignUp() {
       </p>
 
       <div className="flex items-center  gap-20 border px-2 py-1 rounded-3xl mb-6">
-        <img src=" /assets/google_icon.png "/> <p className="font-medium font-bodyFont"> Sign in with Google </p>
+        <img src=" /assets/google_icon.png " alt="google icon"/> <p className="font-medium font-bodyFont"> Sign in with Google </p>
       </div>
 
 

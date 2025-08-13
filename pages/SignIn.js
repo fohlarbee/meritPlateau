@@ -1,12 +1,18 @@
 import Link from "next/link";
+import Image from "next/image"
 
 export default function SignIn() {
   return (
     <section className=" grid grid-cols-1 md:grid-cols-2 items-center align-middle justify-center gap-20  bg-[url('/assets/formBg1.webp')] bg-cover bg-no-repeat bg-center relative md:bg-none">     
       
       <div className="p-8">
-        <img className="h-full hidden md:block" src="/assets/formBg1.webp"></img>
+      <div className="h-full p-8">
+        <Image 
+        height={700}
+        width={700}
+        className="h-full hidden md:block" src="/assets/formBg1.webp"></Image>
         {/* <img src="/assets/logo1.png"></img> */}
+      </div>
       </div>
 
       <div className="  bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">

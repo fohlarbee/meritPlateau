@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className=" bg-col-blk mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10 px-10 py-10 rounded-3xl items-center justify-center text-white">
+    <div className="container bg-col-blk mx-auto">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10 px-10 py-10 rounded-3xl items-center justify-center text-white">
         <div className="flex flex-col items-center lg:items-start gap-5">
           <Image src="/assets/logo-b.svg" width={100} height={100} alt="footer logo" />
           <p className="text-center lg:text-start">87 JD Gomwalk way, Jos, Plateau state.</p>

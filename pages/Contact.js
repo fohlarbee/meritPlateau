@@ -5,9 +5,9 @@ import SocialLinks from '../components/socialLinks'
 
 export default function Contact() {
   return (
-    <section className='container my-4 mx-auto'>
+    <section className='my-4 mx-auto'>
         <Navbar />
-        <article className='grid md:grid-cols-2 grid-cols-1 justify-between gap-12 bg-purp-dark text-white py-12 px-20 mb-20'>
+        <article className='container grid md:grid-cols-2 grid-cols-1 justify-between gap-12 bg-purp-dark text-white py-12 px-20 mb-20'>
 
           {/* Left side */}
           <aside>
@@ -28,8 +28,7 @@ export default function Contact() {
 
           <aside>
             <h3 className="text-lg py-2"> Talk to Us!</h3>
-            <p className="">+234 7034-6300-34</p>
-            <p className="">contact@meritplateau.org</p>
+            <span className="">contact@meritplateau.org</span>
 
             <hr className="w-3/5" />
 
@@ -42,15 +41,17 @@ export default function Contact() {
 
         </article>
 
-        <article  className="mb-24">
-        <form className="">
+        <article  className=" mb-24">
+        <form className="container mx-auto my-0">
          <label htmlFor='name'>Full Name</label>
-          <input className="block p-2 shadow appearance-none border border-purp-dark leading-tight focus:outline-none rounded-md" 
+          <input className="block p-2 my-2 shadow appearance-none border border-purp-dark leading-tight focus:outline-none rounded-md" 
         type='email' id='email' name='email' placeholder='Your Full Name '></input>
 
         <label htmlFor='email'>Email Address</label>
-        <input className="block p-2 shadow appearance-none border border-purp-dark  leading-tight focus:outline-none rounded-md" 
+        <input className="block p-2 my-2 shadow appearance-none border border-purp-dark  leading-tight focus:outline-none rounded-md" 
         type='email' id='email' name='email' placeholder='Enter your email address'></input>
+
+        <textarea></textarea>
         </form>
 
         </article>
