@@ -9,6 +9,7 @@ export default function SignIn() {
         <Image className="h-full hidden md:block" width={1500} height={1500} alt="form background" src="/assets/formBg1.webp" />
         {/* <img src="/assets/logo1.png"></img> */}
       </div>
+     
 
       <div className="  bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">
       <form className="lg:w-3/4 ">

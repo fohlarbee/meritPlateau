@@ -51,6 +51,7 @@ export default function SignUp() {
 
       <div className="flex items-center  gap-20 border px-2 py-1 rounded-3xl mb-6">
         <Image src="/assets/google_icon.png " width={30} height={30} alt="google icon" /> <p className="font-medium font-bodyFont"> Sign in with Google </p>
+        
       </div>
 
 

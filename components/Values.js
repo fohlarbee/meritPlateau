@@ -10,7 +10,7 @@ const Values = () => {
       <p className=' font-bodyFont text-col-blk text-xl py-4 my-8 mx-auto text-center lg:w-2/3'>
           At Merit Plateau, our values guide everything we do. We are commited integrity, compassion, inclusivity, and sustainability ensuring every action we take uplifts and empowers the communities we serve.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-20">
+      <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 py-20">
         <div className="flex flex-col gap-5 bg-col-grey rounded-lg ">
           
           <h4 className="text-xl font-bold text-white bg-purp-dark mt-8 p-2 w-3/4   font-headerFont uppercase">  <span className="bg-col-gold mr-2 w-4 h-4 inline-block rounded-full"></span> no discrimination</h4>
