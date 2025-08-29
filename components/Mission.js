@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function Mission() {
   return (
@@ -23,8 +22,7 @@ export default function Mission() {
       <div className="col-start-6 col-end-8 bg-[url('/assets/bg-circles.png')] bg-cover bg-left md:row-span-full"></div>
 
       </div>
-        
-
+      
       </div>
 
       {/* second grid sectiopn */}
@@ -34,7 +32,7 @@ export default function Mission() {
       <div className="bg-[url('/assets/bg-circles.png')] md:col-start-1 md:col-end-3 col-span-8 bg-cover bg-right "></div>
 
         <article className="md:text-end text-center md:col-start-3 md:col-end-8 col-span-8 px-2">
-        <h3 className="font-semibold text-col-blk mt-3 uppercase"> <span className="bg-col-gold w-4 h-4 mx-2  inline-block rounded-full"></span>
+        <h3 className="font-semibold text-col-blk mt-3 uppercase"> <span className="bg-col-gold w-4 h-4 mx-2 inline-block rounded-full"></span>
         our mission
       </h3>
         <h2 className=" text-2xl lg:text-4xl font-headerFont text-col-blk mt-3 py-2">

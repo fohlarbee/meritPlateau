@@ -5,25 +5,25 @@ export const TeamData = [
             id: 1,
             name: "Jubilant Agida",
             position: "Founder/President",
-            image: "/assets/Jub.webp"
+            image: "/assets/Jubby.webp"
         },
         {
             id: 2,
             name: "Mary Madaki",
             position: "Vice President, Operations",
-            image: "/assets/Mak.webp"
+            image: "/assets/Maki.webp"
         },
         {
             id: 3,
             name: "Samuel Olanrewaju",
             position: "Vice President, Partnership/Fundraising",
-            image: "/assets/Sam.webp"
+            image: "/assets/Samuel.webp"
         },
         {
             id: 4,
             name: "Azonchi Sambo",
             position: "Vice President, Membership/Engagement",
-            image: "/assets/Azo.webp"
+            image: "/assets/Azonchi.webp"
         },
         {
             id: 5,

@@ -17,7 +17,7 @@ export const TagData = [
     {
         id: 4,
         tagName: "Contact",
-        href: "/contact"
+        href: "/Contact"
     },
     {
         id: 5,

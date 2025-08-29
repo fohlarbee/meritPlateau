@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { FaXTwitter, FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="container bg-col-blk mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10 px-10 py-10 rounded-3xl items-center justify-center text-white">
         <div className="flex flex-col items-center lg:items-start gap-5">
-          <img src="/assets/logo-b.svg" alt="footer lgo" />
+          <Image src="/assets/logo-b.svg" width={120} height={120} alt="footer lgo" />
           <p className="text-center lg:text-start">87 JD Gomwalk way, Jos, Plateau state.</p>
         </div>
         <div className="flex flex-col items-center lg:items-start gap-5 py-4">

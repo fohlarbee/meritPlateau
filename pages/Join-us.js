@@ -13,25 +13,25 @@ export default function SignUp() {
 
  <div className="  bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">
       <form className="lg:w-3/4">
-        <h2 className="text-xl lg:text-3xl font-headerFont py-2 my-6">Get Started Now</h2>
+        <h2 className="text-xl lg:text-3xl font-headerFont py-2 my-6">Join us as a volunteer</h2>
 
                     {/* Form elements */}
 
         <div className="mb-6">
         <label htmlFor='name'>Name</label>
-        <input className="block p-1 shadow appearance-none border w-full leading-tight focus:outline-none rounded-lg" 
-        type='text' id='name' name='name' placeholder='Enter your name'></input>
+        <input className="block p-1  appearance-none border-b leading-tight focus:outline-none " 
+        type='text' id='name' name='name' placeholder='Enter your full name'></input>
         </div>
 
         <div className="mb-6">
         <label htmlFor='email'>Email Address</label>
-        <input className="block p-1 shadow appearance-none border w-full leading-tight focus:outline-none rounded-lg" 
+        <input className="block p-1  appearance-none border-b leading-tight focus:outline-none " 
         type='email' id='email' name='email' placeholder='Enter your email address'></input>
         </div>
 
         <div className="mb-6">
         <label htmlFor='password'>Password</label>
-        <input className="block p-1 shadow appearance-none border w-full leading-tight focus:outline-none rounded-lg" 
+        <input className="block p-1  appearance-none border-b leading-tight focus:outline-none " 
         type='password' id='password' name='password' placeholder='Enter your Password'></input>
           </div>
 
@@ -39,7 +39,7 @@ export default function SignUp() {
           <p> <input type='checkbox'></input> <span className="text-s">I agree to the terms and policy</span></p>
         
         </div>
-          <button className=" bg-purp-dark w-full my-3 text-white font-bold font-bodyFont rounded-xl px-16 py-2">Sign Up</button>
+          <button className=" bg-purp-dark my-3 text-white font-bold font-bodyFont rounded-xl px-16 py-2">Sign Up</button>
 
 
                 {/* Google Alternative */}
@@ -50,7 +50,7 @@ export default function SignUp() {
       </p>
 
       <div className="flex items-center  gap-20 border px-2 py-1 rounded-3xl mb-6">
-        <Image src="/assets/google_icon.png " width={30} height={30} alt="google logo"/> <p className="font-medium font-bodyFont"> Sign in with Google </p>
+        <Image src="/assets/google_icon.png " width={30} height={30} alt="google icon" /> <p className="font-medium font-bodyFont"> Sign in with Google </p>
       </div>
 
 

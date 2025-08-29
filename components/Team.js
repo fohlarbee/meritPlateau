@@ -1,13 +1,14 @@
 import { TeamData } from "../Data/TeamInfo";
+import Image from "next/image";
 
 const Team = () => {
   return (
-    <div className="container mx-auto py-20">
+    <div className=" mx-auto lg:py-20">
       
-      <h2 className="text-lg lg:text-xl  text-col-blk text-center font-headerFont font-bold mt-3 uppercase">
+      <h2 className="text-lg lg:text-xl text-col-blk text-center font-bold mt-3 uppercase">
       Meet our team
       </h2>
-      <p className="text-col-blk text-center font-bodyFont py-4 w-3/4 my-0 mx-auto">
+      <p className=" text-center text-col-blk text-lg lg:text-xl py-4 w-3/4 my-0 mx-auto">
         Our team is a passionate group of indiviuals dedicated to driving positive change in underpriviledged communities. Each member brings unique skills, experience, and commitment to advancing our mission. Together, we work tirelessly to create impactful programs that empower lives and foster sustainabile development. Collaboration and innovation are at the heart of everything we do. Get to know the people behind Merit Plateau and the work that makes a difference.
       </p>
 
@@ -16,15 +17,15 @@ const Team = () => {
 
     
       {TeamData.map((data, id) => (
-          <div key={id} className="flex flex-col gap-4 bg-col-grey rounded-md py-10">
-          <img 
+          <div key={id} className="flex flex-col gap-4 bg-col-grey py-10">
+          <Image width={200} height={100}
           src={data.image}
           alt={data.position}
-          className="w-40 h-40 mx-auto rounded-full object-cover"
-          ></img>
+          className="mx-auto object-cover rounded-full w-30 h-45"
+          ></Image>
 
           <h3 className=" font-headerFont">{data.name}</h3>
-          <h3 className="text-white bg-col-blk mx-5 rounded-md py-2 ">{data.position}</h3>
+          <h3 className="text-white bg-col-blk mx-5 rounded-md py-2 " >{data.position}</h3>
 
 
 </div>
