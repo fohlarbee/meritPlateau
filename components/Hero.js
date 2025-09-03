@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <div className="mx-auto">
       <Navbar />
-       <div className="bg-[url('/assets/bgimg.webp')] bg-cover bg-no-repeat bg-center bg-blend-lighten px-6 lg:px-16 py-5"> {/* #ECD0FF */}
+       <div className="relative bg-[url('/assets/bgImg.webp')] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 px-6 lg:px-16 py-5"> 
         
         <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 lg:mt-8 ">
-          <div className="flex flex-col gap-6 lg:gap-4 mt-14">
+          <div className="flex flex-col gap-6 lg:gap-4 mt-14 z-10">
             <h1 className="font-headerFont text-2xl text-center text-white md:text-4xl lg:text-4xl pb-8 w-full lg:w-1/2">
             Building up dreams in the midst of adversity
             </h1>

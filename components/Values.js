@@ -1,7 +1,7 @@
 
 const Values = () => {
   return (
-    <div className="container mx-auto py-16">
+    <div className=" mx-auto py-16">
       <h3 className="font-semibold text-col-blk lg:mt-3 uppercase text-center "> <span className="bg-col-gold mx-4 w-4 h-4 inline-block rounded-full
        "></span>
         our values

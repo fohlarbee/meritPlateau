@@ -11,13 +11,13 @@ export const TeamData = [
             id: 2,
             name: "Mary Madaki",
             position: "Vice President, Operations",
-            image: "/assets/Maki.webp"
+            image: "/assets/Makki.webp"
         },
         {
             id: 3,
             name: "Samuel Olanrewaju",
             position: "Vice President, Partnership/Fundraising",
-            image: "/assets/Samuel.webp"
+            image: "/assets/Sammy.webp"
         },
         {
             id: 4,

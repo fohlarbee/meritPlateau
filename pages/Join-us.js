@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function SignUp() {
+export default function JoinUs() {
   return (
     <section className=" grid grid-cols-1 md:grid-cols-2 items-center align-middle md:gap-8 justify-center bg-[url('/assets/formBg1.webp')] bg-cover bg-no-repeat bg-center relative md:bg-none">
       
