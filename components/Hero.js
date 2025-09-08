@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="mx-auto">
       <Navbar />
-       <div className="relative bg-[url('/assets/bgImg.webp')] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 px-6 lg:px-16 py-5"> 
+       <div className="relative bg-[url('/assets/bgImg.webp')] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 px-6 lg:px-16 py-12"> 
         
         <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 lg:mt-8 ">
           <div className="flex flex-col gap-6 lg:gap-4 mt-14 z-10">

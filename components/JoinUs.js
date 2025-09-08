@@ -2,10 +2,10 @@ import Link from "next/link"
 
 export default function JoinUs() {
   return (
-    <section className=" lg:mx-4">
-        <div className="container relative bg-[url('/assets/support.webp')] bg-no-repeat bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 py-8 px-16 text-center">         
+    <section className=" lg:mx-2">
+        <div className="container relative bg-[url('/assets/support.webp')] bg-no-repeat bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 py-12 px-16 text-center">         
         
-        <article className="z-10 bg-red">
+        <article className="relative z-10">
           <h3 className="text-white font-headerFont font-extrabold text-4xl py-4">Join Us, Be a part of the Change</h3>
 
         <p className=" text-white text-2xl py-8 lg:px-32  font-bodyFont ">
