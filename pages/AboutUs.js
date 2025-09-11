@@ -27,7 +27,7 @@ export default function About() {
                 </div>
 
                 <div className="container bg-col-blk my-36 py-20">
-                  <Image src="/assets/aboutBg.webp" className="mt-[-200px]" width={1200} height={500} />
+                  <Image src="/assets/aboutBg.webp" className="mt-[-200px]" width={1200} height={500} alt="background image of children smilling"/>
 
                   <article className="flex flex-col lg:flex-row gap-20 mt-16">
 

@@ -30,7 +30,7 @@ export default function Media(){
                         </aside>
 
                         <aside className="flex-1">
-                                <Image src="/assets/lappy.webp" width={400} height={400}/>
+                                <Image src="/assets/lappy.webp" width={400} height={400} alt="seeds to success bakground"/>
                         </aside>
 
                      </article>

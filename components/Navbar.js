@@ -8,7 +8,7 @@ import { TagData } from '../Data/TagData'
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   return (
-  <nav className='flex flex-row justify-around w-full items-center py-2'>
+  <nav className=' flex flex-row justify-around w-full items-center py-2 z-100'>
     
         <div className="flex-row justify-center items-center gap-5 rounded-xl">
             <Image src="/logo-b.svg" alt="logo"  width={70} height={70} className=' p-1 w-2/4'/>
@@ -31,7 +31,7 @@ const Navbar = () => {
             </button>
         </div>
         {isMenuOpen && (
-            <div className='flex flex-col gap-5 absolute top-10 right-0 text-center md:container bg-[#fff5f1] rounded-3xl w-full px-6 lg:px-16 py-10'>
+            <div className=' flex flex-col gap-5 absolute top-10 right-0 text-center md:container bg-[#fff5f1] rounded-3xl w-full px-6 lg:px-16 py-10'>
               <button className='absolute top-2 right-5 bg-[#eee] py-2 px-2 rounded-full border-none hover:bg-[#fff]'>
                 <Image 
                 src="/assets/close.svg" 
