@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 import Heading from "../components/Heading";
 import Footer from "../components/Footer"
 import JoinUs from "../components/JoinUs";
-import Card from "../components/card";
-
+import Card from "../components/Card";
 export default function About() {
+
         return (
             <section className="">
 
@@ -27,7 +27,7 @@ export default function About() {
                 </div>
 
                 <div className="container bg-col-blk my-36 py-20">
-                  <Image src="/assets/aboutBg.webp" className="mt-[-200px]" width={1200} height={500} alt="background image of children smilling"/>
+                  <Image src="/assets/aboutBg.webp" className="mt-[-200px] mx-auto " width={1200} height={500} alt="background image of children smilling"/>
 
                   <article className="flex flex-col lg:flex-row gap-20 mt-16">
 
@@ -67,7 +67,7 @@ export default function About() {
                   <article className="flex flex-col items-center px-4">
                     <Heading headingText={"key objectives"} />
 
-                  <div className="mx-auto mb-8 mx-8 mt-12 flex flex-col lg:flex-row gap-20 items-center flex-1 ">
+                  <div className="mx-auto mb-8 mx-8 mt-12 grid md:grid-cols-2 lg:grid-cols-3 lg:flex-row gap-20 items-center flex-1 ">
 
                     <Card cardInfo={"By Q1 of 2025, we project to grow our council size to 200 active members"}/>
 
