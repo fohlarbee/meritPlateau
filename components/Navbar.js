@@ -14,7 +14,7 @@ const Navbar = () => {
             <Image src="/logo-b.svg" alt="logo"  width={70} height={70} className=' p-1 w-2/4'/>
         </div>
 
-        <Link href="/Donate" className='btn hidden md:flex bg-purp-dark text-[#fff] border-none font-bodyFont hover:bg-purp-light hover:text-white capitalize rounded px-8'>
+        <Link href="/Donate" className='btn hidden md:flex bg-purp-dark text-[#fff] border-none font-bodyFont hover:bg-purp-light capitalize rounded px-8'>
                     donate
         </Link>
         <div className="flex-row justify-center font-bodyFont lg:justify-between items-center gap-5 text-xl hidden md:flex ">
@@ -26,7 +26,7 @@ const Navbar = () => {
           
             <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className='btn flex md:hidden bg-[#eee] text-[#fff] border-none hover:bg-purp-light hover:text-white capitalize rounded-full'>
+            className='btn flex md:hidden bg-[#eee] text-[#fff] border-none hover:bg-purp-light hover:text-white focus:bg-purp-light capitalize rounded-full'>
                     <Image src="/assets/menu.svg" alt="menu" className='text-col-blk' width={20} height={20}/>
             </button>
         </div>

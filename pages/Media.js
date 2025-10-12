@@ -1,13 +1,12 @@
 import Image from "next/image";
-import Footer from "../components/Footer";
 import Heading from "../components/Heading";
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 export default function Media(){
         return(
-                <section>
-                   <Navbar />
-                      <article className="container my-12 flex gap-20">
+                <Layout>
+                   
+                      <article className="container my-12 flex gap-8 items-center">
                         <aside className="flex-1">
                                 <Heading headingText={"our future plan"}/>
                                 <h1 className="text-2xl lg:text-4xl py-4">Seed to Success</h1>
@@ -30,18 +29,23 @@ export default function Media(){
                         </aside>
 
                         <aside className="flex-1">
-                                <Image src="/assets/seedSuccess.webp" width={400} height={400} alt="seeds to success bakground"/>
+                                <Image src="/assets/seedSuccess.webp" width={800} height={800} alt="seeds to success bakground"/>
                         </aside>
 
                      </article>
 
                      {/* other component section */}
 
-                     <div className="bg-col-blk flex text-col-white">
-                        <Heading headingText={"key components of seeds to success"}/>
+                     <div className="container bg-col-blk flex text-white py-4 my-4">
+                        <h2 className="uppercase font-bold"><span className="bg-col-gold w-4 h-4 mx-2 inline-block rounded-full"></span>key components of seeds to success</h2>
+
+                        <div></div>
+
+
                      </div>
 
-                     <Footer />
-                </section>
+                     <Heading headingText={"projects we have done"}/>
+
+                </Layout>
         )
 }

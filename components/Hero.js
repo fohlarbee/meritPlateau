@@ -1,11 +1,8 @@
 import Link from "next/link";
-import Navbar from "./Navbar";
-
 
 const Hero = () => {
   return (
     <div className="mx-auto">
-      <Navbar />
        <div className="relative bg-[url('/assets/bgImg.webp')] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:inset-0 before:bg-black/60 px-6 lg:px-16 py-12"> 
         
         <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 lg:mt-8 ">

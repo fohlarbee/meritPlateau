@@ -1,16 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+
+import Layout from '../components/Layout'
 
 export default function Contact() {
   return (
-    <section className='my-4'>
-        <Navbar />
+    <Layout className='my-4'>
         <article className='bg-purp-dark text-white'>
 
         </article>
-
-        <Footer />
-    </section>
+    </Layout>
   )
 }

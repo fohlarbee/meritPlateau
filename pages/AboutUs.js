@@ -1,15 +1,12 @@
 import Image from "next/image";
-import Navbar from "../components/Navbar";
 import Heading from "../components/Heading";
-import Footer from "../components/Footer"
 import JoinUs from "../components/JoinUs";
 import Card from "../components/Card";
+import Layout from "../components/Layout";
 export default function About() {
 
         return (
-            <section className="">
-
-                <Navbar />
+            <Layout className="">
 
                 <div className="container my-16 gap-8 flex flex-col lg:flex-row "> 
 
@@ -67,22 +64,21 @@ export default function About() {
                   <article className="flex flex-col items-center px-4">
                     <Heading headingText={"key objectives"} />
 
-                  <div className="mx-auto mb-8 mx-8 mt-12 grid md:grid-cols-2 lg:grid-cols-3 lg:flex-row gap-20 items-center flex-1 ">
+                  <div className="mx-auto mb-8  mt-12 grid md:grid-cols-2 lg:grid-cols-3 lg:flex-row gap-20 items-center flex-1 ">
 
-                    <Card cardInfo={"By Q1 of 2025, we project to grow our council size to 200 active members"}/>
+                    <Card cardInfo={"By Q2 of 2026, we project to grow our council size to 200 active members"}/>
 
                     <Card cardInfo={"To extend our reach and more communities in need of our programs"}/>
 
                     <Card cardInfo={"Initiate multiple SDG projects across different areas of Plateau State Nigeria."}/>
 
-                    <Card cardInfo={"By Q1 of 2025, we plan to have a solid presence online on different social media platforms"}/>
+                    <Card cardInfo={"By Q2 of 2026, we plan to have a solid presence online on different social media platforms"}/>
 
                     <Card cardInfo={"Grow to become a reputable organization where we can then begin to attract people sympathetic to our project"}/>
                   </div>
                   </article>
 
                 <JoinUs />
-                <Footer />
-            </section>
+            </Layout>
         )
 }

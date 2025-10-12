@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Home from "./Home";
-import Footer from "../components/Footer";
 
 export default function App() {
   return (
@@ -10,11 +9,10 @@ export default function App() {
         <meta name="description" content="a non-proft organization" />
         <link
         ></link>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       
    <Home/>
-   <Footer/>
    
     </div>
   );

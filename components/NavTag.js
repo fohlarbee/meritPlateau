@@ -4,7 +4,7 @@ import React from 'react'
 const NavTag = ({href, tagName}) => {
   return (
     <Link
-    className='text-text-col-blk hover:bg-purp-lighter cursor-pointer p-2 rounded-full'
+    className='text-text-col-blk hover:bg-purp-lighter hover:text-white focus:bg-purp-light focus:bg-text-white cursor-pointer p-2 rounded-full'
      href={href}>
         {tagName}
         </Link>
