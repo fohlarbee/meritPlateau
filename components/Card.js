@@ -5,7 +5,7 @@ export default function Card ({cardInfo}) {
            <div className="bg-col-blk rounded-tr-3xl rounded-bl-3xl ">
                 <Heading />
 
-                <p className="text-white py-20 px-12 ">{cardInfo}</p>
+                <p className="text-white py-12 px-12 text-xl">{cardInfo}</p>
 
            </div>
         )

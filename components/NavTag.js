@@ -1,11 +1,24 @@
+"use client";
 import Link from 'next/link'
-import React from 'react'
 
-const NavTag = ({href, tagName}) => {
+const NavTag = ({href, tagName, isActive, onClick}) => {
+
+
+  //base and conditional classes
+
+  const baseClasses = 'text-text-col-blk cursor-pointer rounded-full p-3 transition-colors';
+  const activeClasses = 'bg-purp-light text-white '
+  const inactiveClasses = 'text-text-col-blk hover:bg-purp-lighter hover:text-white'
+
   return (
-    <Link
-    className='text-text-col-blk hover:bg-purp-lighter hover:text-white focus:bg-purp-light focus:bg-text-white cursor-pointer p-2 rounded-full'
-     href={href}>
+    <Link href={href}
+    onClick={onClick}
+    className={`${baseClasses} ${isActive 
+      ? activeClasses 
+      : inactiveClasses
+    }`}
+     >
+      
         {tagName}
         </Link>
   )

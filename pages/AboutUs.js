@@ -17,7 +17,7 @@ export default function About() {
 
                   <aside className="flex-1">
                         <h1 className="font-bold text-xl pl-8"> We are a community-based non-governmental organization</h1>
-                        <p className="py-4 text-lg">
+                        <p className="py-4 text-xl">
                                 Merit Plateau is dedicated to uplifting underpriviledged individuals and communities through sustainable development initiatives. We focus on addressing social and economic challenges by providing education, skill-building, and empowerment programs. Our work is rooted in collaboration, ensuring that local voices and needs shape our initiatives. By fostering resilience and self-sufficiency, we create Opportunities for lasting change. Together, we are building a future where adversity becomes a stepping stione to success.
                         </p>
                   </aside>
@@ -61,7 +61,7 @@ export default function About() {
                 </div>
 
 
-                  <article className="flex flex-col items-center px-4">
+                  <article className="mx-12 flex flex-col items-center px-4">
                     <Heading headingText={"key objectives"} />
 
                   <div className="mx-auto mb-8  mt-12 grid md:grid-cols-2 lg:grid-cols-3 lg:flex-row gap-20 items-center flex-1 ">
