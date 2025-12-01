@@ -1,6 +1,18 @@
 import Image from "next/image";
 import Heading from "../components/Heading";
 import Layout from "../components/Layout";
+import ProjectCards from "../components/ProjectCards";
+
+
+
+const projectData = [
+      {id:1, src: "/assets/currency.webp", description: "Micro-loan disbursement and repayment management."},
+      {id:2, src: "/assets/lappy.webp", description: "Entrepreneurship bootcamps and workshops."},
+      {id:3, src: "/assets/laptop.webp", description: "Business plan competitions."},
+      {id:4, src: "/assets/currency.webp", description: "Mentorship progrms"},
+      {id:5, src: "/assets/currency.webp", description: "Financial literacy seminars."},
+      {id:6, src: "/assets/currency.webp", description: ""}
+]
 
 export default function Media(){
         return(
@@ -62,13 +74,22 @@ export default function Media(){
 
                      <Heading headingText={"projects we have done"}/>
                         <h2 className=" font-bold text-4xl ml-8 py-8">Together we can plant a seed and watch it grow.</h2>
-                        
-                        <div  className="relative" >
 
-                        <Image src="/assets/currency.webp" alt="currency" width={250} height={250}/>
+                        <div className="flex gap-12 flex-wrap items-center justify-center ">
+
+                        {projectData.map((project)=>
+                        <ProjectCards
+                        key={project.id} 
+                        id={project.id} 
+                        src={project.src} 
+                        description={project.description}
+                        />
+                        )}
                         </div>
 
-                        <p className="absolute ">Micro-loan disbursement and repayment management.</p>
+                        
+                        
+
                      </section>
 
 

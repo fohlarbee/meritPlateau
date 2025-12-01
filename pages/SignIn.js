@@ -6,8 +6,7 @@ export default function SignIn() {
     <section className=" grid grid-cols-1 md:grid-cols-2 items-center align-middle justify-center gap-20  bg-[url('/assets/formBg1.webp')] bg-cover bg-no-repeat bg-center relative md:bg-none">     
       
       <div className="p-8">
-        <Image className="h-full hidden md:block" width={1500} height={1500} alt="form background" src="/assets/formBg1.webp" />
-        {/* <img src="/assets/logo1.png"></img> */}
+        <Image className="h-full hidden md:block" width={700} height={700} alt="form background" src="/assets/formBg1.webp" />
       </div>
      
 

@@ -5,7 +5,7 @@ export default function Mission() {
       <div className="container">
         
       <div className='grid grid-cols-8 grid-rows-8 my-20'>
-      <article className='md:col-start-1 md:col-end-8 col-span-8 text-center md:text-start px-2 md:row-span-full z-10'>
+      <article className='md:col-start-3 md:col-end-8 col-span-8 text-center md:text-start px-2 md:row-span-full z-10'>
       <h3 className="font-semibold text-col-blk mt-3 uppercase">  <span className="bg-col-gold w-4 h-4 mx-2  inline-block rounded-full"></span>
         our vision
       </h3>
@@ -32,7 +32,7 @@ export default function Mission() {
 
       <div className="bg-[url('/assets/bg-circles.png')] md:col-start-1 md:col-end-3 col-span-4 bg-cover bg-right "></div>
 
-        <article className="md:text-end text-center md:col-start-3 md:col-end-8 col-span-8 px-2">
+        <article className="md:text-end text-center md:col-start-3 md:col-end-7 col-span-8 px-2">
         <h3 className="font-semibold text-col-blk mt-3 uppercase"> <span className="bg-col-gold w-4 h-4 mx-2 inline-block rounded-full"></span>
         our mission
       </h3>
