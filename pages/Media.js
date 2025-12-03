@@ -9,9 +9,9 @@ const projectData = [
       {id:1, src: "/assets/currency.webp", description: "Micro-loan disbursement and repayment management."},
       {id:2, src: "/assets/lappy.webp", description: "Entrepreneurship bootcamps and workshops."},
       {id:3, src: "/assets/laptop.webp", description: "Business plan competitions."},
-      {id:4, src: "/assets/currency.webp", description: "Mentorship progrms"},
-      {id:5, src: "/assets/currency.webp", description: "Financial literacy seminars."},
-      {id:6, src: "/assets/currency.webp", description: ""}
+      {id:4, src: "/assets/point.webp", description: "Mentorship programs"},
+      {id:5, src: "/assets/coins.webp", description: "Financial literacy seminars."},
+      {id:6, src: "/assets/books.webp", description: ""}
 ]
 
 export default function Media(){
@@ -87,12 +87,7 @@ export default function Media(){
                         )}
                         </div>
 
-                        
-                        
-
                      </section>
-
-
                 </Layout>
         )
 }
