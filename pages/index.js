@@ -5,11 +5,11 @@ export default function App() {
   return (
     <div>
       <Head>
-        <title>MeritPlateau</title>
+        <title>Merit Plateau</title>
         <meta name="description" content="a non-proft organization" />
         <link
         ></link>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favMerit.ico" />
       </Head>
       
    <Home/>

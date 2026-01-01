@@ -1,12 +1,27 @@
-
+import { useState } from 'react';
 import Heading from '../components/Heading'
 import Layout from '../components/Layout'
 import FormInputData from '../components/FormInputData'
+import { DropDownOptions, CollabOptions, MediaFields } from '../components/DropDownOptions';
+
 
 export default function Contact() {
+
+   const [isCollapsed, setIsCollapsed] = useState(false);
+   const [isValue, setIsValue] = useState("General Inquiry/Question");
+
+   //handles the value change for the dropdown options
+
+   const handleValueUpdate = (newValue) => {
+    setIsValue(newValue);
+
+    // closses the dropdown menu after a selection has been made from the options
+    setIsCollapsed();
+   };
+
   return (
-    <Layout className='my-4 '>
-        <article className='bg-purp-dark text-white px-20 py-16'>
+    <Layout>
+        <article className='bg-purp-dark md:text-lg text-white px-20 py-16'>
 
           <Heading headingText={"contact us"}/>
 
@@ -21,12 +36,14 @@ export default function Contact() {
 
         </article>
 
-      <section className=" container grid grid-cols-8 my-20 ">
+      <section className=" container  my-20 ">
 
-        <div className="bg-[url('/assets/bg-circles.png')] md:col-start-1 md:col-end-3 col-span-5 bg-cover "></div>
+        <div className="grid grid-cols-6">
 
-        <div className="">
-        <form className=" md:col-start-2 md:col-end-8 col-span-8 ">
+             <div className="bg-[url('/assets/bg-circles.png')] col-span-full z-10 md:block md:col-span-2 bg-cover "></div>
+
+        <div className="flex items-center md:col-start-3 md:col-span-6 col-span-full ">
+        <form className=" w-full ">
             
             <FormInputData 
             label={"Full Name *"}
@@ -48,7 +65,7 @@ export default function Contact() {
             label={"Organisation/Company"}
             name={"organisation"}
             type={"text"}
-            placeholder={"Highly recommended. Use 'N/A' if personal"}
+            placeholder={"Highly recommended. Use 'N/A' if personal "}
             />
 
             <FormInputData 
@@ -59,14 +76,25 @@ export default function Contact() {
             />
 
 
-
+            <div>
             <FormInputData 
             label={"How can we help you? *"}
             name={"message"}
-            type={"text"}
-            placeholder={"-- Select Purpose --"}
-            
-            />
+            type={"button"}
+            value={isValue}
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            isExpanded={isCollapsed}
+            hasChevron={true}
+            />       
+            </div>
+
+            {/* this renders the dropdown menu options for purpose of contact conditionally*/}
+            {isCollapsed && <DropDownOptions onButtonClick={handleValueUpdate} />}
+
+            {/* conditionally renders the collaboration form fields by checking the input value attribute  */}
+            { isValue === "Collaboration or Partnership Proposal" && <CollabOptions />}
+            {/* conditionally renders the media form fields by checking the input value attribute  */}
+            { isValue === "Media/Press Inquiry" && <MediaFields />}
 
 
             <FormInputData 
@@ -79,14 +107,17 @@ export default function Contact() {
             <FormInputData 
             label={"Message *"}
             name={"message"}
-            type={"text"}
+            type={"textarea"}
+            rows={8}
             placeholder={"Type your message..."}
             />
-
-            <button>Connect With Our Team</button>
-
+            
+            <button className="bg-indigo-600 text-white px-8 py-2 mt-12 rounded-2xl font-bold text-lg " type="button">Connect With Our Team</button>
         </form>
         </div>
+        </div>
+
+       
       </section>
 
 

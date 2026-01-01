@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import FormInputData from "../components/FormInputData";
+import { DefaultButtons } from "../components/buttons";
 
 export default function JoinUs() {
   return (
@@ -10,51 +12,20 @@ export default function JoinUs() {
       </div>
 
 
- <div className="  bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">
+ <div className="flex flex-col items-center bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">
+  <article className="py-4">
+    <h1 className="text-xl md:text-2xl py-2">Ready to Turn Passion into Action?</h1>
+
+    <p  className="text-lg md:text-xl py-2">
+      Thank you for considering lending your time and talents to the World Merit Plateau mission! Volunteers are the <b>heartbeat</b> of our organisation, helping us amplify our impact and reach who need it most. <br /> <br /> We're looking for passionate individuals ready to commit their unique skills to a meaningful cause. By filling out this application, you are taking the first step toward becoming a vital part of our team. <br /><br /> Please be thorough in your responses. Your answers will help us match your skills, interests, and availability with our most urgent needs.
+    </p>
+  </article>
       <form className="lg:w-3/4">
-        <h2 className="text-xl lg:text-3xl font-headerFont py-2 my-6">Join us as a volunteer</h2>
-
+      <Link href="/VolunteerForm">
+      <DefaultButtons buttontext={"Be the Change. Join the Team"}/>
+      </Link>
+    
                     {/* Form elements */}
-
-        <div className="mb-6">
-        <label htmlFor='name'>Name</label>
-        <input className="block p-1  appearance-none border-b leading-tight focus:outline-none " 
-        type='text' id='name' name='name' placeholder='Enter your full name'></input>
-        </div>
-
-        <div className="mb-6">
-        <label htmlFor='email'>Email Address</label>
-        <input className="block p-1  appearance-none border-b leading-tight focus:outline-none " 
-        type='email' id='email' name='email' placeholder='Enter your email address'></input>
-        </div>
-
-        <div className="mb-6">
-        <label htmlFor='password'>Password</label>
-        <input className="block p-1  appearance-none border-b leading-tight focus:outline-none " 
-        type='password' id='password' name='password' placeholder='Enter your Password'></input>
-          </div>
-
-        <div className='flex justify-between mb-6 '>
-          <p> <input type='checkbox'></input> <span className="text-s">I agree to the terms and policy</span></p>
-        
-        </div>
-          <button className=" bg-purp-dark my-3 text-white font-bold font-bodyFont rounded-xl px-16 py-2">Sign Up</button>
-
-
-                {/* Google Alternative */}
-          <p className="flex items-center mb-6">
-          <span className="w-1/2 px-1"> <hr /> </span>
-          <span>or</span>
-          <span className="w-1/2 px-1"><hr /></span>
-      </p>
-
-      <div className="flex items-center  gap-20 border px-2 py-1 rounded-3xl mb-6">
-        <Image src="/assets/google_icon.png " width={30} height={30} alt="google icon" /> <p className="font-medium font-bodyFont"> Sign in with Google </p>
-        
-      </div>
-
-
-      <p className="text-center">Have an account? <Link href="/SignIn" className="text-col-gold">Sign in</Link> </p>
       </form>
       </div>
       
