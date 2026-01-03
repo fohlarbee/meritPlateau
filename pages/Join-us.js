@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import FormInputData from "../components/FormInputData";
 import { DefaultButtons } from "../components/buttons";
 
 export default function JoinUs() {
@@ -17,7 +16,7 @@ export default function JoinUs() {
     <h1 className="text-xl md:text-2xl py-2">Ready to Turn Passion into Action?</h1>
 
     <p  className="text-lg md:text-xl py-2">
-      Thank you for considering lending your time and talents to the World Merit Plateau mission! Volunteers are the <b>heartbeat</b> of our organisation, helping us amplify our impact and reach who need it most. <br /> <br /> We're looking for passionate individuals ready to commit their unique skills to a meaningful cause. By filling out this application, you are taking the first step toward becoming a vital part of our team. <br /><br /> Please be thorough in your responses. Your answers will help us match your skills, interests, and availability with our most urgent needs.
+      Thank you for considering lending your time and talents to the World Merit Plateau mission! Volunteers are the <b>heartbeat</b> of our organisation, helping us amplify our impact and reach who need it most. <br /> <br /> We&apos;re looking for passionate individuals ready to commit their unique skills to a meaningful cause. By filling out this application, you are taking the first step toward becoming a vital part of our team. <br /><br /> Please be thorough in your responses. Your answers will help us match your skills, interests, and availability with our most urgent needs.
     </p>
   </article>
       <form className="lg:w-3/4">

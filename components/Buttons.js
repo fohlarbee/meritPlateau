@@ -20,10 +20,12 @@ export function ChoiceButtons( { type, value, onButtonClick } ) {
 
 
 // General buttons
-export function DefaultButtons( { type ="button", buttontext} ) {
+export function DefaultButtons( { type ="button", disabled, buttontext, onClick} ) {
   return (
      <button 
      className=" bg-indigo-600 text-white px-8 py-2 mt-12 rounded-2xl font-bold text-lg md:text-xl " 
+     onClick={onClick}
+     disabled={disabled}
      type="button">
       {buttontext}
      </button>

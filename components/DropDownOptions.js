@@ -38,14 +38,14 @@ export function CollabOptions() {
             type={"text"}
             placeholder={"Helps us understand your level and capacity"}
             required
-        />
+      />
 
         <FormInputData 
             label={"Website/Social Links (optional)"}
             name={"URL input"}
             type={"url"}
             placeholder={"Allows the team quickly review your background"}
-          />
+        />
 
           {/* Radio buttons */}
 
@@ -153,9 +153,6 @@ export function MediaFields() {
           onChange={handleRadioChange}
           options={requestOptions}/>
           </div>
-
-      
-
     </div>
   )
 }

@@ -28,7 +28,7 @@ export default function About() {
 
                   <article className="flex flex-col lg:flex-row gap-20 mt-16">
 
-                  <aside className="flex-1">
+                  <aside className="flex-1 text-white">
                   <Heading headingText={"our mission"} />
         <h2 className=" text-2xl lg:text-4xl font-headerFont text-white mt-3 py-2">
         Empowering Lives, 
@@ -39,7 +39,7 @@ export default function About() {
       Our mission at Merit Plateau is to empower underprivileged individuals and communities by addressing critical social and economic challenges, such as poverty and education, through regular engagement and empowerment programs, ultimately creating sustainable and equitable communities.
       </p>
                   </aside>
-                    <aside className="flex-1">
+                    <aside className="flex-1 text-white">
                       
                     <Heading headingText={"our vision"} />
               

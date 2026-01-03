@@ -23,11 +23,11 @@ export default function Contact() {
     <Layout>
         <article className='bg-purp-dark md:text-lg text-white px-20 py-16'>
 
-          <Heading headingText={"contact us"}/>
+          <Heading headingText={"contact us"} /> 
 
-          <h1>Your Vision. Our Mission. Let's Connect.</h1>
+          <h1 className='my-4'>Your Vision. Our Mission. Let&apos;s Connect.</h1>
 
-          <p>Whether you're a passionate individual with an inquiry, an organization seeking meaningful collaboration, or a potential partner looking to connect your resources with our mission, this is your starting point. <br /><br />
+          <p>Whether you&apos;re a passionate individual with an inquiry, an organization seeking meaningful collaboration, or a potential partner looking to connect your resources with our mission, this is your starting point. <br /><br />
 
           We believe the greatest impact comes from working together. Every message we receive opens the door to a new possibility—a new way to empower our community and amplify our reach.<br /><br />
 
