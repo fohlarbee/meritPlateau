@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { DefaultButtons } from "../components/buttons";
+import { DefaultButtons } from "../components/Buttons";
 
 export default function JoinUs() {
   return (

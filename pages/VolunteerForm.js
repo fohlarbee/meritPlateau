@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from "next/image"
 import FormInputData from "../components/FormInputData";
-import { DefaultButtons } from '../components/buttons';
+import { DefaultButtons } from '../components/Buttons';
 
 
 export default function VolunteerForm() {
@@ -119,7 +119,7 @@ export default function VolunteerForm() {
     // team work
 
      const teamWorkOptions = [
-      {label: 'Not too well', value: 'Not too well'},
+      {label: 'Not so well', value: 'Not too well'},
       {label: 'Just Ok', value: 'Just Ok'},
       {label: 'Very Well', value: 'Very Well'},
      
@@ -218,12 +218,16 @@ export default function VolunteerForm() {
           
           <div className='flex justify-around'>
           
+          {/* Previous Button */}
           <DefaultButtons  buttontext={"←  Prev"}
-          onClick={() => prevButton()}/>
+          onClick={() => prevButton()}
+          disabled={stepCount === 1 }/>
+
+          {/* Next Button */}
           <DefaultButtons
            onClick={() => nextButton()} 
            buttontext={"Next →"}
-          //  disabled={stepCount === 1 && disable}
+          
            />
             
           </div>     
@@ -291,6 +295,16 @@ export default function VolunteerForm() {
 
              <FormInputData 
           type="radio"
+          label="How well can you work in a team * "
+          name="Availability preference"
+          value={teamWorkChoice}
+          onChange={handleTeamWorkSelection}
+          options={teamWorkOptions}
+          required
+      />
+
+             <FormInputData 
+          type="radio"
           label="Minimum Commitment * "
           name="minimum commitment"
           value={commitmentChoice}
@@ -305,18 +319,90 @@ export default function VolunteerForm() {
           
           <DefaultButtons  buttontext={"←  Prev"}
           onClick={() => prevButton()}
+          disabled={stepCount === 1 }
           />
 
           <DefaultButtons
            onClick={() => nextButton()} 
            buttontext={"Next →"}
-          //  disabled={stepCount === 1 && disable}
            />
             
           </div>     
       </form>
       </div>
       </section>
+      )};
+
+      {/* Skills / Interests page */}
+
+      { stepCount ===3 && (
+        <section className=" grid grid-cols-1 md:grid-cols-2 items-center md:gap-8 justify-center bg-[url('/assets/formBg1.webp')] bg-cover bg-no-repeat bg-center relative md:bg-none">
+      
+      <div className="h-full md:p-8">
+        <Image className="h-full hidden md:block" width={700} height={700} alt="form background" src="/assets/formBg1.webp" />
+      </div>
+
+
+ <div className="flex flex-col items-center bg-white bg-no-repeat md:bg-transparent bg-opacity-75 p-8 ">
+  <article className="py-4">
+    
+    <h1 className="text-4xl">Skills and Interests</h1>
+  </article>
+      <form className="w-full">
+          
+          <FormInputData 
+            label={"Why do you want to volunteer? *"}
+            name={"Reason for volunteering"}
+            type={"textarea"}
+            rows={6}
+            required
+      />
+
+      <FormInputData 
+            label={"List your skills *"}
+            name={"Skill list"}
+            type={"textarea"}
+            rows={4}
+            placeholder={'e.g: Photography, Project management, Fundraising. e.t.c.'}
+            required
+      />
+
+      <FormInputData 
+            label={"How do you plan to use your skills to help Merit Plateau achieve its goals? *"}
+            name={"Plan to help Merit Plateau with skills"}
+            type={"textarea"}
+            rows={6}
+            placeholder={'I plan to use my Photography skills to tell great stories about its impact'}
+            required
+      />
+
+      <FormInputData 
+          type="radio"
+          label="Do you have any past volunteering Experience? * "
+          name="Volunteerinig Experience"
+          value={yesNoChoice}
+          onChange={handleYesNoSelection}
+          options={yesNo}
+          required
+      />
+
+      <div className='flex justify-around'>
+          
+          <DefaultButtons  buttontext={"←  Prev"}
+          onClick={() => prevButton()}
+          disabled={stepCount === 1 }
+          />
+
+          <DefaultButtons
+           onClick={`${() => nextButton()}`} 
+           buttontext={"Next →"}
+           disabled={stepCount >= TotalSteps}
+           />
+            
+          </div>  
+</form>
+      </div>
+</section>
       )}
      
     </>

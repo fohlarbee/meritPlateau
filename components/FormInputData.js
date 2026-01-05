@@ -14,7 +14,7 @@ const FormInputData = ({  label, name, type = 'text',  placeholder, options = []
           if (type === 'textarea') {
             return (
               <>
-                <label htmlFor={name} className="block md:text-lg mb-1">
+                <label htmlFor={name} className="block md:text-lg mb-2">
                   {label}
                 </label>
                 <textarea 
@@ -22,9 +22,9 @@ const FormInputData = ({  label, name, type = 'text',  placeholder, options = []
                   name={name}
                   value={value}
                   onChange={onChange}
-                  rows={rows}
+                  rows={rows}                
                   placeholder={placeholder}
-                  className="block w-96 p-3 form-textarea shadow appearance-none border border-violet-300/10 leading-tight focus:outline-none"
+                  className="block w-96 p-3 mb-4 form-textarea shadow appearance-none border border-violet-300/10 leading-tight focus:outline-none"
                 />
 
               </>
@@ -42,7 +42,7 @@ const FormInputData = ({  label, name, type = 'text',  placeholder, options = []
             {/* ... Radio Input JSX structure ... */}
             <input type="radio"  
             name={name}
-            className="form-radio cursor-pointer text-indigo-600 border-indigo-600 focus:ring-indigo-500"
+            className="form-radio cursor-pointer  text-indigo-600 border-indigo-600 focus:ring-indigo-500"
             value={option.value}
             onChange={onChange}/>
             
@@ -60,13 +60,13 @@ const FormInputData = ({  label, name, type = 'text',  placeholder, options = []
           type === 'checkbox' ? (
             <div flex items-center mb-4>
               <input
-              className="form-checkbox cursor-pointer text-indigo-600 border-indigo-600 focus:ring-indigo-500"
+              className="form-checkbox cursor-pointer  text-indigo-600 border-indigo-600 focus:ring-indigo-500"
               type="checkbox"
               id={inputId}
               name={name}
               checked={value}/>
               <label htmlFor={name}
-              className="ml-3 md:text-lg select-none cursor-pointer">
+              className="ml-3  md:text-lg select-none cursor-pointer">
                 {label}
               </label>
             </div>

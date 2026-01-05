@@ -1,5 +1,5 @@
 import {useState } from 'react';
-import { ChoiceButtons } from './buttons';
+import { ChoiceButtons } from './Buttons';
 import FormInputData from './FormInputData';
 
 
